@@ -1,0 +1,548 @@
+@import "vars";
+// переменныe для шрифтов,цвета,кусочки кода с помощью extend
+@import "fonts";
+// шрифты
+@import "reset";
+// обнуление стилей
+@import "global";
+// стили,которые глобальные типо резета,что-то по умолчаниию, типо обнуления.что указыать всем общее или каким-то определнным элементам
+@import "media";
+// медиазапросы
+
+.header {
+    background: linear-gradient(to right, $accent 50%, #fff 50%);
+
+    &-top {
+        padding: 23px 0 27px;
+    }
+
+    &-top__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-top__adr {
+        color: #fff;
+        margin-left: 93px;
+    }
+
+    &-top__btn {
+        margin-left: 230px;
+        font-size: 16px;
+        font-family: 'Kia-Bold';
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 20px 42px 23px 47px;
+        background-color: $accent;
+        color: #fff;
+        transition: all .3s;
+
+        &:hover {
+            background-color: $accent-color;
+        }
+    }
+
+    &-top__kia {
+        margin-left: auto;
+    }
+
+    &-content {
+        color: #fff;
+        font-family: 'Kia-Bold';
+        font-weight: 700;
+        background-image: url(../images/bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-height: 420px;
+    }
+
+    &-content__inner {
+        padding-top: 65px;
+        max-width: 545px;
+        width: 100%;
+    }
+
+    &-content__subtitle {
+        font-size: 30px;
+    }
+
+    &-content__title {
+        font-size: 48px;
+        margin-top: 19px;
+        text-transform: uppercase;
+    }
+
+    &-content__text {
+        font-size: 30px;
+        padding-top: 32px;
+    }
+
+    &-content__btn-inner {
+        padding-top: 40px;
+    }
+
+    &-content__btn {
+        font-size: 18px;
+        padding: 25px 65px 20px 62px;
+        color: $text-btn;
+        background-color: #fff;
+        text-transform: uppercase;
+
+    }
+
+    &-content__selection {
+        font-size: 24px;
+        font-family: 'Kia-Bold';
+        font-weight: 700;
+        padding-top: 90px;
+    }
+
+    &-bottom {
+        display: flex;
+    }
+
+    &-bottom {
+        margin-top: 41px;
+    }
+
+    &-bottom__menu {
+        display: flex;
+    }
+
+    &-bottom__menu-list+.header-bottom__menu-list {
+        margin-left: 60px;
+    }
+
+    &-bottom__menu-item {
+        padding-top: 16px;
+    }
+
+    &-bottom__menu-link {
+        color: #fff;
+        font-size: 16px;
+        font-family: 'Kia-Medium';
+        font-weight: 500;
+        transition: all .3s;
+
+        &:hover {
+            color: $accent-color;
+        }
+    }
+
+    &-bottom__form {
+        display: block;
+        color: #000;
+        margin-left: auto;
+    }
+
+    &-bottom__form-title {
+        font-size: 48px;
+        font-family: 'Kia-Bold';
+        font-weight: 700;
+    }
+
+    &-bottom__form-text {
+        margin-top: 16px;
+        font-size: 16px;
+        font-family: 'Kia-Bold';
+        font-weight: 700;
+    }
+
+    &-form {
+        margin-left: auto;
+        margin-top: 30px;
+    }
+
+    &-form__input {
+        font-family: 'Kia-Medium';
+        font-weight: 500;
+        padding: 18px 140px 15px 19px;
+        border: 1px solid #939393;
+
+        &::placeholder {
+            font-family: 'Kia-Medium';
+            font-weight: 500;
+            font-size: 16px;
+            color: #939393;
+        }
+    }
+
+    &-form__btn {
+        display: block;
+        margin-top: 10px;
+        font-family: 'Kia-Medium';
+        font-weight: 500;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: $accent;
+        padding: 19px 73px 18px 69px;
+        border: none;
+        cursor: pointer;
+        max-width: 325px;
+        width: 100%;
+    }
+}
+
+.buy {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 53px;
+        margin-left: 30px;
+    }
+
+    &__item-img {
+        margin-top: 18px;
+    }
+
+    &__item-title {
+        font-family: 'Kia-Bold';
+        font-weight: 700;
+        color: #000;
+        font-size: 30px;
+        padding-top: 38px;
+    }
+
+    &__item-offer {
+        margin-left: 38px;
+    }
+
+    &__item-offer__text-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item-offer__text {
+        font-family: 'Kia-Medium';
+        font-weight: 500;
+        position: relative;
+        padding-left: 10px;
+    }
+
+    &__item-offer__text-title {
+        font-family: 'Kia-Bold';
+        font-weight: 700;
+        font-size: 18px;
+        color: $accent;
+        margin-top: 17px;
+    }
+
+    &__item-offer__link {
+        display: block;
+        margin-top: 28px;
+        font-family: 'Kia-Medium';
+        font-weight: 500;
+        padding: 16px 19px 12px 19px;
+        border: 1px solid $accent;
+        color: $accent;
+        max-width: 218px;
+        width: 100%;
+
+        &:hover {
+            background-color: $accent;
+            color: #fff;
+        }
+    }
+
+    &__item-offer__btn {
+        display: block;
+        margin-top: 10px;
+        padding: 17px 44px 13px 42px;
+        background: $accent;
+        margin-top: 28px;
+        font-family: 'Kia-Medium';
+        font-weight: 500;
+        color: #fff;
+        border: none;
+        text-transform: uppercase;
+        max-width: 220px;
+        width: 100%;
+    }
+
+    &__item-offer__btn-offer {
+        display: block;
+        margin-top: 8px;
+        padding: 17px 44px 13px 42px;
+        background: #333333;
+        font-family: 'Kia-Medium';
+        font-weight: 500;
+        color: #fff;
+        border: none;
+        text-transform: uppercase;
+        max-width: 220px;
+        width: 100%;
+    }
+}
+
+.text-span {
+    color: $accent;
+}
+
+.footer {
+    &__inner {
+        display: flex;
+        margin-top: 73px;
+    }
+
+    &__info {
+        background-color: $accent;
+        padding: 28px 37px 53px 37px;
+        color: #fff;
+    }
+
+    &__info-title {
+        font-size: 24px;
+        font-family: 'Kia-Medium';
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    &__info-adr {
+        margin-top: 27px;
+        font-size: 16px;
+        font-family: 'Kia-Medium';
+    }
+
+    &__info-phone {
+        margin-top: 21px;
+        font-size: 16px;
+        font-family: 'Kia-Medium';
+        font-weight: 500;
+    }
+
+    &__info-form {
+        margin-top: 35px;
+    }
+
+    &__info__input {
+        font-family: 'Kia-Medium';
+        font-weight: 500;
+        padding: 17px 147px 14px 19px;
+        background-color: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+
+        &::placeholder {
+            font-family: 'Kia-Medium';
+            font-weight: 500;
+            font-size: 16px;
+            color: #ff9393;
+        }
+    }
+
+    &__info__btn {
+        margin-top: 12px;
+        text-align: center;
+        font-size: 16px;
+        color: $text-btn;
+        font-family: 'Kia-Bold';
+        font-weight: 700;
+        padding: 17px 147px 14px 19px;
+        max-width: 335px;
+        width: 100%;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 1070px) {
+    .header {
+        &-top__btn {
+            margin-left: 144px;
+        }
+
+        &-content__subtitle {
+            font-size: 28px;
+        }
+
+        &-content__title {
+            font-size: 46px;
+        }
+    }
+
+    .footer {
+        &__inner {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .header {
+        &-top__btn {
+            margin-left: 110px;
+        }
+
+        &-top__adr {
+            margin-left: 48px;
+        }
+
+        &-bottom__form-title {
+            font-size: 40px;
+        }
+
+        &-bottom__menu-link {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (max-width: 870px) {
+    .header {
+        &-top__kia {
+            display: none;
+        }
+
+        &-top__adr {
+            margin-left: 0;
+        }
+
+        &-content__btn {
+            padding: 15px 40px 15px 40px;
+        }
+    }
+
+    .header-bottom__menu-list+.header-bottom__menu-list {
+        margin-left: 30px;
+    }
+
+    .buy {
+        &__inner {
+            display: block;
+        }
+
+        &__item {
+            justify-content: start;
+        }
+    }
+
+    .footer {
+        &__images {
+            display: none;
+        }
+
+        &__info {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .header {
+        background: $accent;
+
+        &-top__btn {
+            display: block;
+            margin-top: 30px;
+            margin-left: 0;
+            background-color: #fff;
+            color: $text-btn;
+            max-width: 250px;
+        }
+
+        &-content {
+            background-image: none;
+        }
+
+        &-bottom {
+            display: block;
+        }
+
+        &-bottom__form-title {
+            font-size: 35px;
+            color: #fff;
+        }
+
+        &-bottom__form-text {
+            color: #fff;
+        }
+
+        &-bottom__form {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    .header {
+        &-top__btn {
+            padding: 10px 20px;
+        }
+    }
+}
+
+@media (max-width: 590px) {
+    .header {
+        &-top__inner {
+            display: block;
+        }
+
+        &-top__adr {
+            margin-top: 30px;
+        }
+
+        &-top__btn {
+            padding: 10px 20px;
+            max-width: 200px;
+        }
+
+        &-content__selection {
+            padding-top: 45px;
+            text-align: center;
+        }
+
+        &-bottom__menu {
+            display: block;
+            text-align: center;
+        }
+
+        &-bottom__menu-item {
+            padding-top: 30px;
+        }
+
+        &-bottom__form {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        &-form__btn {
+            margin: 0 auto;
+            background-color: #fff;
+            color: $text-btn;
+            margin-top: 20px;
+        }
+    }
+
+    .header-bottom__menu-list+.header-bottom__menu-list {
+        margin: 0;
+    }
+
+    .buy {
+        &__item {
+            display: block;
+        }
+
+        &__item-offer__text-wrapper {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .header {
+        &-content__title {
+            font-size: 40px;
+        }
+
+        &-form__input {
+            width: 100%;
+        }
+    }
+}

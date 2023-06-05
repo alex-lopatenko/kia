@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Kia-Light';
+    font-weight: 300;
+    font-style: normal;
+    src: local('Kia-Light'),
+        url('../fonts/KIAL.woff2') format('woff2'),
+        url('../fonts/KIAL.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kia-Medium';
+    font-weight: 500;
+    font-style: normal;
+    src: local('Kia-Medium'),
+        url('../fonts/KIAM.woff2') format('woff2'),
+        url('../fonts/KIAM.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kia-Bold';
+    font-weight: 700;
+    font-style: normal;
+    src: local('Kia-Bold'),
+        url('../fonts/KIAB.woff2') format('woff2'),
+        url('../fonts/KIAMB.woff') format('woff');
+    font-display: swap;
+}

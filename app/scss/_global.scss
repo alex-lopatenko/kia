@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Kia-Medium';
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    padding: 0 15px;
+    max-width: 1207px;
+    margin: 0 auto;
+}
